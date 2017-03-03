@@ -2,15 +2,16 @@
 Trata-se de um projeto maven para construção de uma aplicação java spa web utilizando spring boot, com a IDE Spring Tool Suite.
 
 ## Tecnologias
-Maven
-AngularJS e AngularJS Router
-Spring Boot Web 
-Spring Boot JMS
-Spring Boot Data JPA
-Spring Boot Thymeleaf
-Spring Framework JMS
-Apache Activemq Broker
-MySQL Database
+
+* Maven
+* AngularJS e AngularJS Router
+* Spring Boot Web 
+* Spring Boot JMS
+* Spring Boot Data JPA
+* Spring Boot Thymeleaf
+* Spring Framework JMS
+* Apache Activemq Broker
+* MySQL Database
 
 ## Gerando a base de dados
 <p>
