@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html ng-app="sistemaDeEmissaoDeNotasFiscaisApp">
+<head>	
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<title>Sistema de Emissão de Notas Fiscais</title>
+		
+	<!--	 	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />	
+	<link href='./css/style.css' rel="stylesheet" type="text/css" />	
+	<link href='./css/font-awesome.min.css' rel="stylesheet" type="text/css" />		
+	-->
+	
+	<script data-require="angular.js@*" data-semver="1.6.1" src="http://code.angularjs.org/1.6.2/angular.js"></script>	
+	<script data-require="angular-animate@*" data-semver="1.6.1" src="http://code.angularjs.org/1.6.2/angular-animate.js"></script>
+	<script data-require="angular-route@*" data-semver="1.6.1" src="http://code.angularjs.org/1.6.2/angular-touch.js"></script>
+	<script data-require="angular-route@*" data-semver="1.6.1" src="http://code.angularjs.org/1.6.2/angular-route.js"></script>
+	
+	<!--	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-resource.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-route.min.js"></script> 
+    -->    
+    <!-- 
+    <script type="text/javascript" src="./js/angular.js"></script>   
+    -->
+    
+	<script type="text/javascript" src="./js/app.js"></script>
+	<script type="text/javascript" src="./js/controller/main-controller.js"></script>
+	<script type="text/javascript" src="./js/controller/notafiscal-controller.js"></script>
+	<script type="text/javascript" src="./js/controller/mercadoria-controller.js"></script>
+	<script type="text/javascript" src="./js/ui-bootstrap-tpls-2.5.0.min.js"></script>
+	<script type="text/javascript" src="./js/jquery-3.1.1.js"></script> 
+	<script type="text/javascript" src="./js/bootstrap.js"></script> 
+
+</head>
+
+
+<body ng-controller="mainController"> 
+
+	<base href="/" />
+	
+	<a href="/notasFiscais"> Notas Fiscais </a>
+	
+	 &nbsp; &nbsp;
+	
+	<a href="/mercadorias"> Mercadorias </a>
+	
+	<!-- 
+	<a href="/emissoes"> Emissões </a> &nbsp;
+	 -->
+
+	<br/>	
+	<br/>	
+	<div ng-view="ng-view">	</div>
+
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+<h1> Oi, {{ notaFiscal.name }} </h1>
+Nome: <input type="text" ng-model="notaFiscal.name"/>
+<button ng-click="addNotaFiscal()" class="btn-panel-big">Salvar</button>
+<button ng-click="cancelUpdateNotaFiscal()" class="btn-panel-big">Cancelar</button>				
+         
+          <div class="panel-heading">
+			<i class="panel-title-icon fa fa-tasks"></i>
+			<span class="panel-title">Notas Fiscais</span>
+			<div class="panel-heading-controls">
+				<button ng-click="toggle = !toggle" class="btn-panel" ng-init="toggle=true">Incluir nova nota fiscal</button>
+				<button class="btn-panel" confirmed-click="#" ng-confirm-click="Would you like to archive completed tasks?">Clear completed tasks</button>
+			</div>
+		</div>						
+
+
+           <div class="panel-body">			
+			<div class="nfes" ng-repeat="nota in notasFiscais">				
+				<span  class="color color-green">
+				{{ nota.id }} ) Número / Descrição:  {{ nota.name }}
+				<button ng-click="removeNotaFiscal(nota)" 	class="btn-panel-big">Remover</button>
+				<button ng-click="updateNotaFiscal(nota)" 	class="btn-panel-big">Alterar</button>
+				</span>
+			</div>			
+		</div> 
+		
+		<div id="add-task-panel" class="fadein fadeout addpanel panel" ng-hide="toggle">
+		
+			<div class="panel-heading">
+				<i class="panel-title-icon fa fa-plus"></i>
+				<span class="panel-title">Incluir Nota Fiscal</span>
+				<div class="panel-heading-controls">
+					<button ng-click="toggle = !toggle" class="btn-panel">Voltar</button>
+				</div>
+			</div>
+			
+			<div class="panel-body">
+				<div class="nfes" >
+					<table class="add-nfes">
+						<tr>
+							<td>Nome:</td>
+							<td><input type="text" ng-model="notaFiscal.name"/></td>
+						</tr>
+						<tr>
+							<td><br/>
+							<button ng-click="addNotaFiscal()" class="btn-panel-big">
+							Incluir
+							</button>
+							</td>
+						</tr>
+					</table>								
+				</div>
+			</div>		
+		</div>    
+ -->	

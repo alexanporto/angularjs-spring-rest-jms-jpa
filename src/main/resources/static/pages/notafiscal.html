@@ -1,0 +1,37 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body ng-controller="notaFiscalController"> 
+<div>	
+	<form novalidate  name="frmNotasFiscais">	
+		<fieldset>			
+			<legend> <b> Formulário de Nota Fiscal </b> </legend>
+				
+			<div>		
+				<label>Nome:</label> 
+				<input type="text" name="fieldName" ng-model="notaFiscal.name" required/>
+				<span ng-show="frmNotasFiscais.fieldName.$error.required && frmNotasFiscais.fieldName.$dirty"> Campo <b>Nome</b> obrigatório.</span>
+			</div>
+			
+			<button ng-click="addNotaFiscal()" name="bAdd" ng-disabled="frmNotasFiscais.$invalid">Salvar</button> 
+			<button ng-click="cancelUpdateNotaFiscal()"  name="bCancel" ng-disabled="frmNotasFiscais.$invalid">Cancelar</button>
+		</fieldset>	
+	</form>
+		
+	<br/>
+	<br/>
+
+	<div>			
+		<div  ng-repeat="nota in notasFiscais">				
+			<span>
+			Número: {{ nota.id }} --------------------	Descrição:  {{ nota.name }}
+			<button ng-click="removeNotaFiscal(nota)">Remover</button>
+			<button ng-click="updateNotaFiscal(nota)">Alterar</button>			
+			</span>
+		</div>			
+	</div>
+	
+</div>
+</body>
+</html>

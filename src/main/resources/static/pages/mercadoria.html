@@ -1,0 +1,36 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body ng-controller="mercadoriaController"> 
+<div>
+	<form novalidate  name="frmMercadorias">	
+		<fieldset>			
+			<legend> <b> Formulário de Mercadoria </b> </legend>
+				
+			<div>		
+				<label>Nome:</label> 
+				<input type="text" name="fieldName" ng-model="mercadoria.name" required/>
+				<span ng-show="frmMercadorias.fieldName.$error.required && frmMercadorias.fieldName.$dirty"> Campo <b>Nome</b> obrigatório.</span>
+			</div>
+			
+			<button ng-click="addMercadoria()" name="bAddMercadoria" ng-disabled="frmMercadorias.$invalid">Salvar</button> <!-- class="btn-panel-big" -->
+			<button ng-click="cancelUpdateMercadoria()"  name="bCancelMercadoria" ng-disabled="frmMercadorias.$invalid">Cancelar</button><!-- class="btn-panel-big" -->
+		</fieldset>	
+	</form>
+				
+	<br/>
+	<br/>
+
+	<div>			
+		<div ng-repeat="merc in mercadorias">				
+			<span>
+			Descrição:  {{ merc.name }}
+			<button ng-click="removeMercadoria(merc)">Remover</button>
+			<button ng-click="updateMercadoria(merc)">Alterar</button>			
+			</span>
+		</div>			
+	</div>
+</div>
+</body>
+</html>
