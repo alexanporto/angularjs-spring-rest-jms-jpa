@@ -18,8 +18,7 @@ Para rodar a aplicação importe o projeto mave na IDE, preferencialmente a Spri
 Um servidor mysql deve estar instalado, ative-o.
 Rode o projeto como uma aplicação spring boot. 
 Na primeira vez, o hibernate irá gerar o banco de dados vazio devido à propriedade spring.jpa.hibernate.ddl-auto estar setada com "create": 
-<br/><b>spring.jpa.hibernate.ddl-auto=create</b>
-
+<br/><b>spring.jpa.hibernate.ddl-auto=create</b><br/>
 A partir daí comente esta propriedade para pode utilizar o banco de dados normalmente:<br/>
 <b>#spring.jpa.hibernate.ddl-auto=create</b>
 </p>
